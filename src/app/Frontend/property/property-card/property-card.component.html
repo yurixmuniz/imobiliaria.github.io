@@ -1,0 +1,26 @@
+<div class="row p-3">
+    <div class=" shadown-lg col p-3">
+        <div class="card" style="border: hidden; color: rgb(255, 62, 104);">
+          <img class="propimg" src="assets/images/house.png" alt="">
+          <div class="row p-2">
+            <div class="col-auto">
+              <div class="card-body p-2">
+                <h5>{{property.Id}} - {{property.Tipo}}</h5>
+                <h5 style="color: rgb(51, 230, 51);">{{property.Preco.toLocaleString("pt-br",{style: "currency",currency: "BRL"})}}</h5>
+              </div>
+            </div>
+            <div class="col-auto">
+              <ul class="text-right list-inline" style="margin-top: 13px;">
+                <li class="list-inline-item">
+                  <button class="btn btn-danger"><i class="fas fa-edit"></i></button>
+                </li>
+                <li class="list-inline-item">
+                  <button class="btn btn-danger"><i class="fas fa-book"></i></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
